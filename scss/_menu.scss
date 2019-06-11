@@ -71,52 +71,52 @@
       transform: translate3d(0, 0, 0);
     }
   }
+}
+// brandin side
+&-branding {
+  background: $primary-color;
+  transform: translate3d(0, 100%, 0);
+  @include easeOut;
 
-  &-branding {
-    background: $primary-color;
-    transform: translate3d(0, 100%, 0);
-    @include easeOut;
-
-    &.show {
-      // Slide in from bottom
-      transform: translate3d(0, 0, 0);
-    }
-
-    .portrait {
-      width: 250px;
-      height: 250px;
-      background: url("../img/portrait.jpg");
-      border-radius: 50%;
-      border: solid 3px $seccondary-color;
-    }
+  &.show {
+    // Slide in from bottom
+    transform: translate3d(0, 0, 0);
   }
-  .nav-item {
-    transform: translate3d(600px, 0, 0);
-    @include easeOut;
 
-    &.show {
-      // Slide in from right
-      transform: translate3d(0, 0, 0);
-    }
-
-    &.current > a {
-      color: $seccondary-color;
-    }
+  .portrait {
+    width: 250px;
+    height: 250px;
+    background: url("../img/portrait.jpg");
+    border-radius: 50%;
+    border: solid 3px $seccondary-color;
   }
-  .nav-link {
-    display: inline-block;
-    position: relative;
-    font-size: 30px;
-    text-transform: uppercase;
-    padding: 1rem 0;
-    font-weight: 300;
-    color: set-text-color($primary-color);
-    text-decoration: none;
-    @include easeOut;
+}
+.nav-item {
+  transform: translate3d(600px, 0, 0);
+  @include easeOut;
 
-    &:hover {
-      color: $seccondary-color;
-    }
+  &.show {
+    // Slide in from right
+    transform: translate3d(0, 0, 0);
+  }
+
+  &.current > a {
+    color: $seccondary-color;
+  }
+}
+.nav-link {
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  font-weight: 300;
+  color: set-text-color($primary-color);
+  text-decoration: none;
+  @include easeOut;
+
+  &:hover {
+    color: $seccondary-color;
   }
 }
 
